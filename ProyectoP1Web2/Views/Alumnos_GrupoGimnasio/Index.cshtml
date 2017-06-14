@@ -1,0 +1,39 @@
+﻿@model IEnumerable<ProyectoP1Web2.Models.Alumnos_GrupoGimnasio>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Agregar", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Alumno.Matricula)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.GrupoGimnasio.nombre)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Alumno.Matricula)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.GrupoGimnasio.nombre)
+        </td>
+        <td>
+            @Html.ActionLink("Editar", "Edit", new { id=item.idAlumnos_GrupoGimnasio }) |
+            @Html.ActionLink("Detalles", "Details", new { id=item.idAlumnos_GrupoGimnasio }) |
+            @Html.ActionLink("Eliminar", "Delete", new { id=item.idAlumnos_GrupoGimnasio })
+        </td>
+    </tr>
+}
+
+</table>

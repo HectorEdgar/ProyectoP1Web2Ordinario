@@ -1,0 +1,125 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--<!DOCTYPE horariosGimnasio_Horas SYSTEM "C:\Users\hetor\Documents\Visual Studio 2015\Projects\ProyectoP1Web2\ProyectoP1Web2\Xml\XmlHorariosGimnasio_Horas.dtd">-->
+<?xml-stylesheet type="text/css" href="XmlHorariosGimnasio_Horas.css"?>
+<horariosGimnasio_Horas xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="C:\Users\hetor\Documents\VISUAL~1\Projects\ProyectoP1Web2\ProyectoP1Web2\Xml\XmlHorariosGimnasio_Horas.xsd">
+	<HorarioGimnasio_Horas>
+		<idHorarioGimnasio_Horas key="Primary">1</idHorarioGimnasio_Horas>
+		<dia>Lunes</dia>
+		<idHorario key="Foreign">1</idHorario>
+		<idHora key="Foreign">1</idHora>
+	</HorarioGimnasio_Horas>
+	<HorarioGimnasio_Horas>
+		<idHorarioGimnasio_Horas key="Primary">2</idHorarioGimnasio_Horas>
+		<dia>Lunes</dia>
+		<idHorario key="Foreign">2</idHorario>
+		<idHora key="Foreign">2</idHora>
+	</HorarioGimnasio_Horas>
+	<HorarioGimnasio_Horas>
+		<idHorarioGimnasio_Horas key="Primary">3</idHorarioGimnasio_Horas>
+		<dia>Lunes</dia>
+		<idHorario key="Foreign">3</idHorario>
+		<idHora key="Foreign">3</idHora>
+	</HorarioGimnasio_Horas>
+	<HorarioGimnasio_Horas>
+		<idHorarioGimnasio_Horas key="Primary">4</idHorarioGimnasio_Horas>
+		<dia>Martes</dia>
+		<idHorario key="Foreign">4</idHorario>
+		<idHora key="Foreign">4</idHora>
+	</HorarioGimnasio_Horas>
+	<HorarioGimnasio_Horas>
+		<idHorarioGimnasio_Horas key="Primary">5</idHorarioGimnasio_Horas>
+		<dia>Martes</dia>
+		<idHorario key="Foreign">5</idHorario>
+		<idHora key="Foreign">5</idHora>
+	</HorarioGimnasio_Horas>
+	<HorarioGimnasio_Horas>
+		<idHorarioGimnasio_Horas key="Primary">6</idHorarioGimnasio_Horas>
+		<dia>Martes</dia>
+		<idHorario key="Foreign">6</idHorario>
+		<idHora key="Foreign">6</idHora>
+	</HorarioGimnasio_Horas>
+	<HorarioGimnasio_Horas>
+		<idHorarioGimnasio_Horas key="Primary">7</idHorarioGimnasio_Horas>
+		<dia>Miercoles</dia>
+		<idHorario key="Foreign">7</idHorario>
+		<idHora key="Foreign">7</idHora>
+	</HorarioGimnasio_Horas>
+	<HorarioGimnasio_Horas>
+		<idHorarioGimnasio_Horas key="Primary">8</idHorarioGimnasio_Horas>
+		<dia>Miercoles</dia>
+		<idHorario key="Foreign">8</idHorario>
+		<idHora key="Foreign">8</idHora>
+	</HorarioGimnasio_Horas>
+	<HorarioGimnasio_Horas>
+		<idHorarioGimnasio_Horas key="Primary">9</idHorarioGimnasio_Horas>
+		<dia>Miercoles</dia>
+		<idHorario key="Foreign">9</idHorario>
+		<idHora key="Foreign">9</idHora>
+	</HorarioGimnasio_Horas>
+	<HorarioGimnasio_Horas>
+		<idHorarioGimnasio_Horas key="Primary">10</idHorarioGimnasio_Horas>
+		<dia>Jueves</dia>
+		<idHorario key="Foreign">10</idHorario>
+		<idHora key="Foreign">10</idHora>
+	</HorarioGimnasio_Horas>
+	<HorarioGimnasio_Horas>
+		<idHorarioGimnasio_Horas key="Primary">11</idHorarioGimnasio_Horas>
+		<dia>Jueves</dia>
+		<idHorario key="Foreign">11</idHorario>
+		<idHora key="Foreign">11</idHora>
+	</HorarioGimnasio_Horas>
+	<HorarioGimnasio_Horas>
+		<idHorarioGimnasio_Horas key="Primary">12</idHorarioGimnasio_Horas>
+		<dia>Jueves</dia>
+		<idHorario key="Foreign">12</idHorario>
+		<idHora key="Foreign">12</idHora>
+	</HorarioGimnasio_Horas>
+	<HorarioGimnasio_Horas>
+		<idHorarioGimnasio_Horas key="Primary">13</idHorarioGimnasio_Horas>
+		<dia>Viernes</dia>
+		<idHorario key="Foreign">13</idHorario>
+		<idHora key="Foreign">13</idHora>
+	</HorarioGimnasio_Horas>
+	<HorarioGimnasio_Horas>
+		<idHorarioGimnasio_Horas key="Primary">14</idHorarioGimnasio_Horas>
+		<dia>Viernes</dia>
+		<idHorario key="Foreign">14</idHorario>
+		<idHora key="Foreign">14</idHora>
+	</HorarioGimnasio_Horas>
+	<HorarioGimnasio_Horas>
+		<idHorarioGimnasio_Horas key="Primary">15</idHorarioGimnasio_Horas>
+		<dia>Viernes</dia>
+		<idHorario key="Foreign">15</idHorario>
+		<idHora key="Foreign">15</idHora>
+	</HorarioGimnasio_Horas>
+	<HorarioGimnasio_Horas>
+		<idHorarioGimnasio_Horas key="Primary">16</idHorarioGimnasio_Horas>
+		<dia>Sabado</dia>
+		<idHorario key="Foreign">16</idHorario>
+		<idHora key="Foreign">16</idHora>
+	</HorarioGimnasio_Horas>
+	<HorarioGimnasio_Horas>
+		<idHorarioGimnasio_Horas key="Primary">17</idHorarioGimnasio_Horas>
+		<dia>Sabado</dia>
+		<idHorario key="Foreign">17</idHorario>
+		<idHora key="Foreign">17</idHora>
+	</HorarioGimnasio_Horas>
+	<HorarioGimnasio_Horas>
+		<idHorarioGimnasio_Horas key="Primary">18</idHorarioGimnasio_Horas>
+		<dia>Sabado</dia>
+		<idHorario key="Foreign">18</idHorario>
+		<idHora key="Foreign">18</idHora>
+	</HorarioGimnasio_Horas>
+	<HorarioGimnasio_Horas>
+		<idHorarioGimnasio_Horas key="Primary">19</idHorarioGimnasio_Horas>
+		<dia>Domingo</dia>
+		<idHorario key="Foreign">19</idHorario>
+		<idHora key="Foreign">19</idHora>
+	</HorarioGimnasio_Horas>
+	<HorarioGimnasio_Horas>
+		<idHorarioGimnasio_Horas key="Primary">20</idHorarioGimnasio_Horas>
+		<dia>Domingo</dia>
+		<idHorario key="Foreign">20</idHorario>
+		<idHora key="Foreign">20</idHora>
+	</HorarioGimnasio_Horas>
+</horariosGimnasio_Horas>

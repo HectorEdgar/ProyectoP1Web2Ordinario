@@ -1,0 +1,42 @@
+﻿@model ProyectoP1Web2.Models.Asistencia
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Detalles</h2>
+
+<div>
+    <h4>Asistencia</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Fecha)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Fecha)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Estado)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Estado)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Alumnos_GrupoGimnasio.Matricula)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Alumnos_GrupoGimnasio.Matricula)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Editar", "Edit", new { id = Model.idAsistencia }) |
+    @Html.ActionLink("Regresar", "Index")
+</p>

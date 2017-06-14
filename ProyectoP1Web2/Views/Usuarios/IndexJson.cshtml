@@ -1,0 +1,57 @@
+﻿@*@model IEnumerable<ProyectoP1Web2.Models.Usuario>*@
+<script src="~/Scripts/jquery-3.1.1.min.js"></script>
+<script src="~/Scripts/jquery.unobtrusive-ajax.js"></script>
+
+
+<script type="text/javascript">
+    $(document).ready(function () {
+
+
+        $("#txtSearch").keyup(function () {
+            var x = $("#txtSearch").val();
+
+
+            $.ajax({
+                type: "POST",
+                url: '@Url.Action("Search", "Usuarios")',
+                contentType: "application/json; charset=utf-8",
+                data: JSON.stringify({ "nombreUsuario": x }),
+                dataType: "json",
+                success: function (data) {
+
+
+                    var table = "<table class='table'>";
+                    table += "<tr><td>Nombre usuario</td><td>Contaseña</td><td>Rol</td> </tr>"
+                    $.each(data, function (IndexJson, value) {
+                        table += "<tr><td>" + value.nombreUsuario + "</td> <td>" + value.Contraseña + "</td> <td>" + value.Rol + "</td></tr>";
+
+                    });
+                    table += "</table>";
+                    $("#myData").html(table);
+
+
+                }
+            });
+
+
+        });
+    });
+</script>
+
+
+<table class="table">
+
+    <tbody>
+
+        <tr>
+            <td valign="top">
+                <div class="form-horizontal">
+                    @Html.TextBox("txtSearch", null, new { @placeholder = "Busca tu usuario"})
+                </div>
+                <div id="myData">
+                    
+                </div>
+            </td>
+        </tr>
+    </tbody>
+</table>

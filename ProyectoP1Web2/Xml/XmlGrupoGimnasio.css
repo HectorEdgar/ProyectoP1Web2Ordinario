@@ -1,0 +1,22 @@
+﻿grupoGimnasio
+{
+  display:block;
+  border-width: 1px;
+  border-style: solid;
+  
+}
+idGimnasio{
+  display:block;
+  color:red;
+}
+idHorario{
+  display:block;
+  color:green;
+}
+nombre{
+  display:block;
+  color:black;
+  font-size:20px;
+}
+idHorario[key]:before {content:""attr(key)" key = "}
+idGimnasio[key]:before {content:""attr(key)" key = "}

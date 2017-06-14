@@ -1,0 +1,54 @@
+﻿@model IEnumerable<ProyectoP1Web2.Models.Usuario>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Agregar nuevo", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Contraseña)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Rol)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Persona.Nombre)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Contraseña)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Rol)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Persona.Nombre)
+        </td>
+        <td>
+            @Html.ActionLink("Editar", "Edit", new { id=item.nombreUsuario }) |
+            @*@Html.ActionLink("Details", "Details", new { id=item.nombreUsuario }) |*@
+            @Ajax.ActionLink("Detalles", "Details2", "Usuarios", new { id = item.nombreUsuario }, 
+           new AjaxOptions { HttpMethod = "GET", InsertionMode = InsertionMode.Replace, UpdateTargetId = "detalle" }) |
+            @Html.ActionLink("Borrar", "Delete", new { id=item.nombreUsuario })
+        </td>
+        @*<td>
+            @Ajax.ActionLink("Ver", "Detalle2", "controlador1", new { id = item.id_paciente }, new AjaxOptions { HttpMethod = "GET", InsertionMode = InsertionMode.Replace, UpdateTargetId = "detalle" })
+        </td>*@
+    </tr>
+}
+
+</table>
+<div id="detalle">
+
+
+</div>

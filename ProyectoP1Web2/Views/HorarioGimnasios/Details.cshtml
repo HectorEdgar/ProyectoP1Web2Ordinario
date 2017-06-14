@@ -1,0 +1,42 @@
+﻿@model IEnumerable<ProyectoP1Web2.Models.HorarioGimnasio_Hora>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Dia)
+        </th>
+        <th>
+            Hora inicio
+        </th>
+        <th>
+            Hora fin
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.HorarioGimnasio.nombre)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Dia)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Hora.HoraInicio.Hour) : @Html.DisplayFor(modelItem => item.Hora.HoraInicio.Minute)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Hora.HoraFin.Hour) : @Html.DisplayFor(modelItem => item.Hora.HoraFin.Minute)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.HorarioGimnasio.nombre)
+        </td>
+        <td>
+        </td>
+    </tr>
+}
+
+</table>

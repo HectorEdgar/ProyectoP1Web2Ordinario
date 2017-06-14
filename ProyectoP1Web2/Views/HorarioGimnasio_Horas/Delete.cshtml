@@ -1,0 +1,48 @@
+﻿@model ProyectoP1Web2.Models.HorarioGimnasio_Horas
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>HorarioGimnasio_Horas</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Dia)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Dia)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.HorarioGimnasio.nombre)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.HorarioGimnasio.nombre)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Horas.IdHora)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Horas.IdHora)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>

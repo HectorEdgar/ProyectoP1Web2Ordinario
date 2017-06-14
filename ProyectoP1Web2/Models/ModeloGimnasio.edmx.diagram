@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="7fc4130a003642a3ab8c48c42b53e39f" Name="Diagram1">
+        <EntityTypeShape EntityType="SistemaGimnasioModel.Alumno" Width="1.5" PointX="6.375" PointY="10.375" />
+        <EntityTypeShape EntityType="SistemaGimnasioModel.Alumnos_GrupoGimnasio" Width="1.5" PointX="6.875" PointY="6.75" />
+        <EntityTypeShape EntityType="SistemaGimnasioModel.AspNetRoles" Width="1.5" PointX="3.5" PointY="2.25" />
+        <EntityTypeShape EntityType="SistemaGimnasioModel.AspNetUserClaims" Width="1.5" PointX="8" PointY="0.75" />
+        <EntityTypeShape EntityType="SistemaGimnasioModel.AspNetUserLogins" Width="1.5" PointX="8" PointY="3.5" />
+        <EntityTypeShape EntityType="SistemaGimnasioModel.AspNetUsers" Width="1.5" PointX="5.75" PointY="1.125" />
+        <EntityTypeShape EntityType="SistemaGimnasioModel.catalogocoord" Width="1.5" PointX="10.5" PointY="0.5" />
+        <EntityTypeShape EntityType="SistemaGimnasioModel.Grupo" Width="1.5" PointX="8.75" PointY="10.75" />
+        <EntityTypeShape EntityType="SistemaGimnasioModel.GrupoGimnasio" Width="1.5" PointX="3.5" PointY="7.375" />
+        <EntityTypeShape EntityType="SistemaGimnasioModel.Hora" Width="1.5" PointX="0.875" PointY="11.625" />
+        <EntityTypeShape EntityType="SistemaGimnasioModel.HorarioGimnasio" Width="1.5" PointX="0.625" PointY="7.75" />
+        <EntityTypeShape EntityType="SistemaGimnasioModel.HorarioGimnasio_Hora" Width="1.5" PointX="3.125" PointY="10.25" />
+        <EntityTypeShape EntityType="SistemaGimnasioModel.Licenciatura" Width="1.5" PointX="8.875" PointY="13.875" />
+        <EntityTypeShape EntityType="SistemaGimnasioModel.MigrationHistory" Width="1.5" PointX="10.5" PointY="4.5" />
+        <EntityTypeShape EntityType="SistemaGimnasioModel.Persona" Width="1.5" PointX="6" PointY="13.625" />
+        <EntityTypeShape EntityType="SistemaGimnasioModel.Usuario" Width="1.5" PointX="3.375" PointY="13.625" />
+        <AssociationConnector Association="SistemaGimnasioModel.FK__Alumno__idGrupo__22AA2996" />
+        <AssociationConnector Association="SistemaGimnasioModel.FK__Alumno__idPerson__239E4DCF" />
+        <AssociationConnector Association="SistemaGimnasioModel.FK__Alumnos_G__Matri__2D27B809" />
+        <AssociationConnector Association="SistemaGimnasioModel.FK__Alumnos_G__idGim__2E1BDC42" />
+        <AssociationConnector Association="SistemaGimnasioModel.FK_dbo_AspNetUserClaims_dbo_AspNetUsers_UserId" />
+        <AssociationConnector Association="SistemaGimnasioModel.FK_dbo_AspNetUserLogins_dbo_AspNetUsers_UserId" />
+        <AssociationConnector Association="SistemaGimnasioModel.FK__Grupo__IdLicenci__1FCDBCEB" />
+        <AssociationConnector Association="SistemaGimnasioModel.FK__GrupoGimn__IdHor__2A4B4B5E" />
+        <AssociationConnector Association="SistemaGimnasioModel.FK__HorarioGi__IdHor__3A81B327" />
+        <AssociationConnector Association="SistemaGimnasioModel.FK__HorarioGi__IdHor__398D8EEE" />
+        <AssociationConnector Association="SistemaGimnasioModel.FK__Usuario__idPerso__33D4B598" />
+        <AssociationConnector Association="SistemaGimnasioModel.AspNetUserRoles" />
+        <EntityTypeShape EntityType="SistemaGimnasioModel.Asistencia" Width="1.5" PointX="10.625" PointY="7.5" />
+        <AssociationConnector Association="SistemaGimnasioModel.FK__Asistenci__idAlu__6EF57B66" />
+        </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

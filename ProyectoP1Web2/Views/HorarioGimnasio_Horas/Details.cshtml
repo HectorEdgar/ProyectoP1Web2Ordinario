@@ -1,0 +1,42 @@
+﻿@model ProyectoP1Web2.Models.HorarioGimnasio_Horas
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>HorarioGimnasio_Horas</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Dia)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Dia)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.HorarioGimnasio.nombre)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.HorarioGimnasio.nombre)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Horas.IdHora)
+        </dt>
+ddd
+        <dd>
+            @Html.DisplayFor(model => model.Horas.IdHora)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.idHorarioGimnasio_Horas }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

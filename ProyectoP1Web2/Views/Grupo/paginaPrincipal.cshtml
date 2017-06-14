@@ -1,0 +1,45 @@
+﻿@model IEnumerable<ProyectoP1Web2.Models.Grupo>
+
+@{
+    ViewBag.Title = "paginaPrincipal";
+}
+
+<h2>paginaPrincipal</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Nombre)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.semestre)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Licenciatura.Nombre)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Nombre)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.semestre)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Licenciatura.Nombre)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.idGrupo }) |
+            @Html.ActionLink("Details", "Details", new { id=item.idGrupo }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.idGrupo })
+        </td>
+    </tr>
+}
+
+</table>

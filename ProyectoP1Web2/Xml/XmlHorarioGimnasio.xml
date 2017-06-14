@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- <!DOCTYPE horariosGimnasio SYSTEM "C:\Users\hetor\Documents\Visual Studio 2015\Projects\ProyectoP1Web2\ProyectoP1Web2\Xml\XmlHorarioGimnasio.dtd"> -->
+<?xml-stylesheet type="text/css" href="XmlHorarioGimnasio.css"?>
+<horariosGimnasio xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="C:\Users\hetor\Documents\VISUAL~1\Projects\ProyectoP1Web2\ProyectoP1Web2\Xml\XmlHorarioGimnasio.xsd">
+	<horarioGimnasio>
+		<idHorario key="Primary">1</idHorario>
+		<nombre>Horario 1</nombre>
+	</horarioGimnasio>
+	<horarioGimnasio>
+		<idHorario key="Primary">2</idHorario>
+		<nombre>Horario 2</nombre>
+	</horarioGimnasio>
+	<horarioGimnasio>
+		<idHorario key="Primary">3</idHorario>
+		<nombre>Horario 3</nombre>
+	</horarioGimnasio>
+	<horarioGimnasio>
+		<idHorario key="Primary">4</idHorario>
+		<nombre>Horario 4</nombre>
+	</horarioGimnasio>
+	<horarioGimnasio>
+		<idHorario key="Primary">5</idHorario>
+		<nombre>Horario 5</nombre>
+	</horarioGimnasio>
+	<horarioGimnasio>
+		<idHorario key="Primary">6</idHorario>
+		<nombre>Horario 6</nombre>
+	</horarioGimnasio>
+	<horarioGimnasio>
+		<idHorario key="Primary">7</idHorario>
+		<nombre>Horario 7</nombre>
+	</horarioGimnasio>
+	<horarioGimnasio>
+		<idHorario key="Primary">8</idHorario>
+		<nombre>Horario 8</nombre>
+	</horarioGimnasio>
+	<horarioGimnasio>
+		<idHorario key="Primary">9</idHorario>
+		<nombre>Horario 9</nombre>
+	</horarioGimnasio>
+	<horarioGimnasio>
+		<idHorario key="Primary">10</idHorario>
+		<nombre>Horario 10</nombre>
+	</horarioGimnasio>
+	<horarioGimnasio>
+		<idHorario key="Primary">11</idHorario>
+		<nombre>Horario 11</nombre>
+	</horarioGimnasio>
+	<horarioGimnasio>
+		<idHorario key="Primary">12</idHorario>
+		<nombre>Horario 12</nombre>
+	</horarioGimnasio>
+	<horarioGimnasio>
+		<idHorario key="Primary">13</idHorario>
+		<nombre>Horario 13</nombre>
+	</horarioGimnasio>
+	<horarioGimnasio>
+		<idHorario key="Primary">14</idHorario>
+		<nombre>Horario 14</nombre>
+	</horarioGimnasio>
+	<horarioGimnasio>
+		<idHorario key="Primary">15</idHorario>
+		<nombre>Horario 15</nombre>
+	</horarioGimnasio>
+	<horarioGimnasio>
+		<idHorario key="Primary">16</idHorario>
+		<nombre>Horario 16</nombre>
+	</horarioGimnasio>
+	<horarioGimnasio>
+		<idHorario key="Primary">17</idHorario>
+		<nombre>Horario 17</nombre>
+	</horarioGimnasio>
+	<horarioGimnasio>
+		<idHorario key="Primary">18</idHorario>
+		<nombre>Horario 18</nombre>
+	</horarioGimnasio>
+	<horarioGimnasio>
+		<idHorario key="Primary">19</idHorario>
+		<nombre>Horario 19</nombre>
+	</horarioGimnasio>
+	<horarioGimnasio>
+		<idHorario key="Primary">20</idHorario>
+		<nombre>Horario 20</nombre>
+	</horarioGimnasio>
+</horariosGimnasio>

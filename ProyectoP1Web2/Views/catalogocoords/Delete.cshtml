@@ -1,0 +1,72 @@
+﻿@model ProyectoP1Web2.Models.catalogocoord
+
+@{
+    ViewBag.Title = "Eliminar";
+}
+
+<h2>Eliminar</h2>
+
+<h3>¿Quieres eliminar esto?</h3>
+<div>
+    <h4>Contacto</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.nombre)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.nombre)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.latitud)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.latitud)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.longitud)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.longitud)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.lada)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.lada)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.telefono)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.telefono)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.email)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.email)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Eliminar" class="btn btn-default" /> |
+            @Html.ActionLink("Regresar", "Index")
+        </div>
+    }
+</div>

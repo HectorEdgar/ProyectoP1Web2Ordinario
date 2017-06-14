@@ -1,0 +1,409 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="SistemaGimnasioModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityContainer Name="SistemaGimnasioEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Alumno" EntityType="SistemaGimnasioModel.Alumno" />
+    <EntitySet Name="Alumnos_GrupoGimnasio" EntityType="SistemaGimnasioModel.Alumnos_GrupoGimnasio" />
+    <EntitySet Name="AspNetRoles" EntityType="SistemaGimnasioModel.AspNetRoles" />
+    <EntitySet Name="AspNetUserClaims" EntityType="SistemaGimnasioModel.AspNetUserClaims" />
+    <EntitySet Name="AspNetUserLogins" EntityType="SistemaGimnasioModel.AspNetUserLogins" />
+    <EntitySet Name="AspNetUsers" EntityType="SistemaGimnasioModel.AspNetUsers" />
+    <EntitySet Name="catalogocoord" EntityType="SistemaGimnasioModel.catalogocoord" />
+    <EntitySet Name="Grupo" EntityType="SistemaGimnasioModel.Grupo" />
+    <EntitySet Name="GrupoGimnasio" EntityType="SistemaGimnasioModel.GrupoGimnasio" />
+    <EntitySet Name="Hora" EntityType="SistemaGimnasioModel.Hora" />
+    <EntitySet Name="HorarioGimnasio" EntityType="SistemaGimnasioModel.HorarioGimnasio" />
+    <EntitySet Name="HorarioGimnasio_Hora" EntityType="SistemaGimnasioModel.HorarioGimnasio_Hora" />
+    <EntitySet Name="Licenciatura" EntityType="SistemaGimnasioModel.Licenciatura" />
+    <EntitySet Name="MigrationHistory" EntityType="SistemaGimnasioModel.MigrationHistory" />
+    <EntitySet Name="Persona" EntityType="SistemaGimnasioModel.Persona" />
+    <EntitySet Name="Usuario" EntityType="SistemaGimnasioModel.Usuario" />
+    <AssociationSet Name="FK__Alumno__idGrupo__22AA2996" Association="SistemaGimnasioModel.FK__Alumno__idGrupo__22AA2996">
+      <End Role="Grupo" EntitySet="Grupo" />
+      <End Role="Alumno" EntitySet="Alumno" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Alumno__idPerson__239E4DCF" Association="SistemaGimnasioModel.FK__Alumno__idPerson__239E4DCF">
+      <End Role="Persona" EntitySet="Persona" />
+      <End Role="Alumno" EntitySet="Alumno" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Alumnos_G__Matri__2D27B809" Association="SistemaGimnasioModel.FK__Alumnos_G__Matri__2D27B809">
+      <End Role="Alumno" EntitySet="Alumno" />
+      <End Role="Alumnos_GrupoGimnasio" EntitySet="Alumnos_GrupoGimnasio" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Alumnos_G__idGim__2E1BDC42" Association="SistemaGimnasioModel.FK__Alumnos_G__idGim__2E1BDC42">
+      <End Role="GrupoGimnasio" EntitySet="GrupoGimnasio" />
+      <End Role="Alumnos_GrupoGimnasio" EntitySet="Alumnos_GrupoGimnasio" />
+    </AssociationSet>
+    <AssociationSet Name="FK_dbo_AspNetUserClaims_dbo_AspNetUsers_UserId" Association="SistemaGimnasioModel.FK_dbo_AspNetUserClaims_dbo_AspNetUsers_UserId">
+      <End Role="AspNetUsers" EntitySet="AspNetUsers" />
+      <End Role="AspNetUserClaims" EntitySet="AspNetUserClaims" />
+    </AssociationSet>
+    <AssociationSet Name="FK_dbo_AspNetUserLogins_dbo_AspNetUsers_UserId" Association="SistemaGimnasioModel.FK_dbo_AspNetUserLogins_dbo_AspNetUsers_UserId">
+      <End Role="AspNetUsers" EntitySet="AspNetUsers" />
+      <End Role="AspNetUserLogins" EntitySet="AspNetUserLogins" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Grupo__IdLicenci__1FCDBCEB" Association="SistemaGimnasioModel.FK__Grupo__IdLicenci__1FCDBCEB">
+      <End Role="Licenciatura" EntitySet="Licenciatura" />
+      <End Role="Grupo" EntitySet="Grupo" />
+    </AssociationSet>
+    <AssociationSet Name="FK__GrupoGimn__IdHor__2A4B4B5E" Association="SistemaGimnasioModel.FK__GrupoGimn__IdHor__2A4B4B5E">
+      <End Role="HorarioGimnasio" EntitySet="HorarioGimnasio" />
+      <End Role="GrupoGimnasio" EntitySet="GrupoGimnasio" />
+    </AssociationSet>
+    <AssociationSet Name="FK__HorarioGi__IdHor__3A81B327" Association="SistemaGimnasioModel.FK__HorarioGi__IdHor__3A81B327">
+      <End Role="Hora" EntitySet="Hora" />
+      <End Role="HorarioGimnasio_Hora" EntitySet="HorarioGimnasio_Hora" />
+    </AssociationSet>
+    <AssociationSet Name="FK__HorarioGi__IdHor__398D8EEE" Association="SistemaGimnasioModel.FK__HorarioGi__IdHor__398D8EEE">
+      <End Role="HorarioGimnasio" EntitySet="HorarioGimnasio" />
+      <End Role="HorarioGimnasio_Hora" EntitySet="HorarioGimnasio_Hora" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Usuario__idPerso__33D4B598" Association="SistemaGimnasioModel.FK__Usuario__idPerso__33D4B598">
+      <End Role="Persona" EntitySet="Persona" />
+      <End Role="Usuario" EntitySet="Usuario" />
+    </AssociationSet>
+    <AssociationSet Name="AspNetUserRoles" Association="SistemaGimnasioModel.AspNetUserRoles">
+      <End Role="AspNetRoles" EntitySet="AspNetRoles" />
+      <End Role="AspNetUsers" EntitySet="AspNetUsers" />
+    </AssociationSet>
+    <EntitySet Name="Asistencia" EntityType="SistemaGimnasioModel.Asistencia" />
+    <AssociationSet Name="FK__Asistenci__idAlu__6EF57B66" Association="SistemaGimnasioModel.FK__Asistenci__idAlu__6EF57B66">
+      <End Role="Alumnos_GrupoGimnasio" EntitySet="Alumnos_GrupoGimnasio" />
+      <End Role="Asistencia" EntitySet="Asistencia" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="Alumno">
+    <Key>
+      <PropertyRef Name="Matricula" />
+    </Key>
+    <Property Name="Matricula" Type="String" Nullable="false" MaxLength="8" FixedLength="false" Unicode="false" />
+    <Property Name="idGrupo" Type="Int32" Nullable="false" />
+    <Property Name="idPersona" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Grupo" Relationship="SistemaGimnasioModel.FK__Alumno__idGrupo__22AA2996" FromRole="Alumno" ToRole="Grupo" />
+    <NavigationProperty Name="Persona" Relationship="SistemaGimnasioModel.FK__Alumno__idPerson__239E4DCF" FromRole="Alumno" ToRole="Persona" />
+    <NavigationProperty Name="Alumnos_GrupoGimnasio" Relationship="SistemaGimnasioModel.FK__Alumnos_G__Matri__2D27B809" FromRole="Alumno" ToRole="Alumnos_GrupoGimnasio" />
+  </EntityType>
+  <EntityType Name="Alumnos_GrupoGimnasio">
+    <Key>
+      <PropertyRef Name="idAlumnos_GrupoGimnasio" />
+    </Key>
+    <Property Name="Matricula" Type="String" Nullable="false" MaxLength="8" FixedLength="false" Unicode="false" />
+    <Property Name="idGimnasio" Type="Int32" Nullable="false" />
+    <Property Name="idAlumnos_GrupoGimnasio" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <NavigationProperty Name="Alumno" Relationship="SistemaGimnasioModel.FK__Alumnos_G__Matri__2D27B809" FromRole="Alumnos_GrupoGimnasio" ToRole="Alumno" />
+    <NavigationProperty Name="GrupoGimnasio" Relationship="SistemaGimnasioModel.FK__Alumnos_G__idGim__2E1BDC42" FromRole="Alumnos_GrupoGimnasio" ToRole="GrupoGimnasio" />
+    <NavigationProperty Name="Asistencia" Relationship="SistemaGimnasioModel.FK__Asistenci__idAlu__6EF57B66" FromRole="Alumnos_GrupoGimnasio" ToRole="Asistencia" />
+  </EntityType>
+  <EntityType Name="AspNetRoles">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="String" Nullable="false" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="256" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="AspNetUsers" Relationship="SistemaGimnasioModel.AspNetUserRoles" FromRole="AspNetRoles" ToRole="AspNetUsers" />
+  </EntityType>
+  <EntityType Name="AspNetUserClaims">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="UserId" Type="String" Nullable="false" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Name="ClaimType" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="ClaimValue" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="AspNetUsers" Relationship="SistemaGimnasioModel.FK_dbo_AspNetUserClaims_dbo_AspNetUsers_UserId" FromRole="AspNetUserClaims" ToRole="AspNetUsers" />
+  </EntityType>
+  <EntityType Name="AspNetUserLogins">
+    <Key>
+      <PropertyRef Name="LoginProvider" />
+      <PropertyRef Name="ProviderKey" />
+      <PropertyRef Name="UserId" />
+    </Key>
+    <Property Name="LoginProvider" Type="String" Nullable="false" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Name="ProviderKey" Type="String" Nullable="false" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Name="UserId" Type="String" Nullable="false" MaxLength="128" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="AspNetUsers" Relationship="SistemaGimnasioModel.FK_dbo_AspNetUserLogins_dbo_AspNetUsers_UserId" FromRole="AspNetUserLogins" ToRole="AspNetUsers" />
+  </EntityType>
+  <EntityType Name="AspNetUsers">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="String" Nullable="false" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Name="Email" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="EmailConfirmed" Type="Boolean" Nullable="false" />
+    <Property Name="PasswordHash" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="SecurityStamp" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="PhoneNumber" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="PhoneNumberConfirmed" Type="Boolean" Nullable="false" />
+    <Property Name="TwoFactorEnabled" Type="Boolean" Nullable="false" />
+    <Property Name="LockoutEndDateUtc" Type="DateTime" Precision="3" />
+    <Property Name="LockoutEnabled" Type="Boolean" Nullable="false" />
+    <Property Name="AccessFailedCount" Type="Int32" Nullable="false" />
+    <Property Name="UserName" Type="String" Nullable="false" MaxLength="256" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="AspNetUserClaims" Relationship="SistemaGimnasioModel.FK_dbo_AspNetUserClaims_dbo_AspNetUsers_UserId" FromRole="AspNetUsers" ToRole="AspNetUserClaims" />
+    <NavigationProperty Name="AspNetUserLogins" Relationship="SistemaGimnasioModel.FK_dbo_AspNetUserLogins_dbo_AspNetUsers_UserId" FromRole="AspNetUsers" ToRole="AspNetUserLogins" />
+    <NavigationProperty Name="AspNetRoles" Relationship="SistemaGimnasioModel.AspNetUserRoles" FromRole="AspNetUsers" ToRole="AspNetRoles" />
+  </EntityType>
+  <EntityType Name="catalogocoord">
+    <Key>
+      <PropertyRef Name="clavecct" />
+    </Key>
+    <Property Name="clavecct" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="nombre" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="latitud" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="longitud" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="lada" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="telefono" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="email" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="Grupo">
+    <Key>
+      <PropertyRef Name="idGrupo" />
+    </Key>
+    <Property Name="Nombre" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="IdLicenciatura" Type="Int32" Nullable="false" />
+    <Property Name="idGrupo" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="semestre" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Alumno" Relationship="SistemaGimnasioModel.FK__Alumno__idGrupo__22AA2996" FromRole="Grupo" ToRole="Alumno" />
+    <NavigationProperty Name="Licenciatura" Relationship="SistemaGimnasioModel.FK__Grupo__IdLicenci__1FCDBCEB" FromRole="Grupo" ToRole="Licenciatura" />
+  </EntityType>
+  <EntityType Name="GrupoGimnasio">
+    <Key>
+      <PropertyRef Name="idGimnasio" />
+    </Key>
+    <Property Name="idGimnasio" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="nombre" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="IdHorario" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Alumnos_GrupoGimnasio" Relationship="SistemaGimnasioModel.FK__Alumnos_G__idGim__2E1BDC42" FromRole="GrupoGimnasio" ToRole="Alumnos_GrupoGimnasio" />
+    <NavigationProperty Name="HorarioGimnasio" Relationship="SistemaGimnasioModel.FK__GrupoGimn__IdHor__2A4B4B5E" FromRole="GrupoGimnasio" ToRole="HorarioGimnasio" />
+  </EntityType>
+  <EntityType Name="Hora">
+    <Key>
+      <PropertyRef Name="IdHora" />
+    </Key>
+    <Property Name="IdHora" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="HoraInicio" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="HoraFin" Type="DateTime" Nullable="false" Precision="3" />
+    <NavigationProperty Name="HorarioGimnasio_Hora" Relationship="SistemaGimnasioModel.FK__HorarioGi__IdHor__3A81B327" FromRole="Hora" ToRole="HorarioGimnasio_Hora" />
+  </EntityType>
+  <EntityType Name="HorarioGimnasio">
+    <Key>
+      <PropertyRef Name="IdHorario" />
+    </Key>
+    <Property Name="IdHorario" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="nombre" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="GrupoGimnasio" Relationship="SistemaGimnasioModel.FK__GrupoGimn__IdHor__2A4B4B5E" FromRole="HorarioGimnasio" ToRole="GrupoGimnasio" />
+    <NavigationProperty Name="HorarioGimnasio_Hora" Relationship="SistemaGimnasioModel.FK__HorarioGi__IdHor__398D8EEE" FromRole="HorarioGimnasio" ToRole="HorarioGimnasio_Hora" />
+  </EntityType>
+  <EntityType Name="HorarioGimnasio_Hora">
+    <Key>
+      <PropertyRef Name="idHorarioGimnasio_Horas" />
+    </Key>
+    <Property Name="idHorarioGimnasio_Horas" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="IdHora" Type="Int32" Nullable="false" />
+    <Property Name="IdHorario" Type="Int32" Nullable="false" />
+    <Property Name="Dia" Type="String" Nullable="false" MaxLength="10" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Hora" Relationship="SistemaGimnasioModel.FK__HorarioGi__IdHor__3A81B327" FromRole="HorarioGimnasio_Hora" ToRole="Hora" />
+    <NavigationProperty Name="HorarioGimnasio" Relationship="SistemaGimnasioModel.FK__HorarioGi__IdHor__398D8EEE" FromRole="HorarioGimnasio_Hora" ToRole="HorarioGimnasio" />
+  </EntityType>
+  <EntityType Name="Licenciatura">
+    <Key>
+      <PropertyRef Name="IdLicenciatura" />
+    </Key>
+    <Property Name="IdLicenciatura" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Nombre" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Grupo" Relationship="SistemaGimnasioModel.FK__Grupo__IdLicenci__1FCDBCEB" FromRole="Licenciatura" ToRole="Grupo" />
+  </EntityType>
+  <EntityType Name="MigrationHistory">
+    <Key>
+      <PropertyRef Name="MigrationId" />
+      <PropertyRef Name="ContextKey" />
+    </Key>
+    <Property Name="MigrationId" Type="String" Nullable="false" MaxLength="150" FixedLength="false" Unicode="true" />
+    <Property Name="ContextKey" Type="String" Nullable="false" MaxLength="300" FixedLength="false" Unicode="true" />
+    <Property Name="Model" Type="Binary" Nullable="false" MaxLength="Max" FixedLength="false" />
+    <Property Name="ProductVersion" Type="String" Nullable="false" MaxLength="32" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="Persona">
+    <Key>
+      <PropertyRef Name="idPersona" />
+    </Key>
+    <Property Name="idPersona" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Nombre" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="ApellidoPaterno" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="ApellidoMaterno" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="Edad" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Alumno" Relationship="SistemaGimnasioModel.FK__Alumno__idPerson__239E4DCF" FromRole="Persona" ToRole="Alumno" />
+    <NavigationProperty Name="Usuario" Relationship="SistemaGimnasioModel.FK__Usuario__idPerso__33D4B598" FromRole="Persona" ToRole="Usuario" />
+  </EntityType>
+  <EntityType Name="Usuario">
+    <Key>
+      <PropertyRef Name="nombreUsuario" />
+    </Key>
+    <Property Name="nombreUsuario" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="Contraseña" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="Rol" Type="String" Nullable="false" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="idPersona" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Persona" Relationship="SistemaGimnasioModel.FK__Usuario__idPerso__33D4B598" FromRole="Usuario" ToRole="Persona" />
+  </EntityType>
+  <Association Name="FK__Alumno__idGrupo__22AA2996">
+    <End Type="SistemaGimnasioModel.Grupo" Role="Grupo" Multiplicity="1" />
+    <End Type="SistemaGimnasioModel.Alumno" Role="Alumno" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Grupo">
+        <PropertyRef Name="idGrupo" />
+      </Principal>
+      <Dependent Role="Alumno">
+        <PropertyRef Name="idGrupo" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Alumno__idPerson__239E4DCF">
+    <End Type="SistemaGimnasioModel.Persona" Role="Persona" Multiplicity="1" />
+    <End Type="SistemaGimnasioModel.Alumno" Role="Alumno" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Persona">
+        <PropertyRef Name="idPersona" />
+      </Principal>
+      <Dependent Role="Alumno">
+        <PropertyRef Name="idPersona" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Alumnos_G__Matri__2D27B809">
+    <End Type="SistemaGimnasioModel.Alumno" Role="Alumno" Multiplicity="1" />
+    <End Type="SistemaGimnasioModel.Alumnos_GrupoGimnasio" Role="Alumnos_GrupoGimnasio" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Alumno">
+        <PropertyRef Name="Matricula" />
+      </Principal>
+      <Dependent Role="Alumnos_GrupoGimnasio">
+        <PropertyRef Name="Matricula" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Alumnos_G__idGim__2E1BDC42">
+    <End Type="SistemaGimnasioModel.GrupoGimnasio" Role="GrupoGimnasio" Multiplicity="1" />
+    <End Type="SistemaGimnasioModel.Alumnos_GrupoGimnasio" Role="Alumnos_GrupoGimnasio" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="GrupoGimnasio">
+        <PropertyRef Name="idGimnasio" />
+      </Principal>
+      <Dependent Role="Alumnos_GrupoGimnasio">
+        <PropertyRef Name="idGimnasio" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_dbo_AspNetUserClaims_dbo_AspNetUsers_UserId">
+    <End Type="SistemaGimnasioModel.AspNetUsers" Role="AspNetUsers" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Type="SistemaGimnasioModel.AspNetUserClaims" Role="AspNetUserClaims" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AspNetUsers">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="AspNetUserClaims">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_dbo_AspNetUserLogins_dbo_AspNetUsers_UserId">
+    <End Type="SistemaGimnasioModel.AspNetUsers" Role="AspNetUsers" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Type="SistemaGimnasioModel.AspNetUserLogins" Role="AspNetUserLogins" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AspNetUsers">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="AspNetUserLogins">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Grupo__IdLicenci__1FCDBCEB">
+    <End Type="SistemaGimnasioModel.Licenciatura" Role="Licenciatura" Multiplicity="1" />
+    <End Type="SistemaGimnasioModel.Grupo" Role="Grupo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Licenciatura">
+        <PropertyRef Name="IdLicenciatura" />
+      </Principal>
+      <Dependent Role="Grupo">
+        <PropertyRef Name="IdLicenciatura" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__GrupoGimn__IdHor__2A4B4B5E">
+    <End Type="SistemaGimnasioModel.HorarioGimnasio" Role="HorarioGimnasio" Multiplicity="1" />
+    <End Type="SistemaGimnasioModel.GrupoGimnasio" Role="GrupoGimnasio" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="HorarioGimnasio">
+        <PropertyRef Name="IdHorario" />
+      </Principal>
+      <Dependent Role="GrupoGimnasio">
+        <PropertyRef Name="IdHorario" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__HorarioGi__IdHor__3A81B327">
+    <End Type="SistemaGimnasioModel.Hora" Role="Hora" Multiplicity="1" />
+    <End Type="SistemaGimnasioModel.HorarioGimnasio_Hora" Role="HorarioGimnasio_Hora" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Hora">
+        <PropertyRef Name="IdHora" />
+      </Principal>
+      <Dependent Role="HorarioGimnasio_Hora">
+        <PropertyRef Name="IdHora" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__HorarioGi__IdHor__398D8EEE">
+    <End Type="SistemaGimnasioModel.HorarioGimnasio" Role="HorarioGimnasio" Multiplicity="1" />
+    <End Type="SistemaGimnasioModel.HorarioGimnasio_Hora" Role="HorarioGimnasio_Hora" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="HorarioGimnasio">
+        <PropertyRef Name="IdHorario" />
+      </Principal>
+      <Dependent Role="HorarioGimnasio_Hora">
+        <PropertyRef Name="IdHorario" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Usuario__idPerso__33D4B598">
+    <End Type="SistemaGimnasioModel.Persona" Role="Persona" Multiplicity="1" />
+    <End Type="SistemaGimnasioModel.Usuario" Role="Usuario" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Persona">
+        <PropertyRef Name="idPersona" />
+      </Principal>
+      <Dependent Role="Usuario">
+        <PropertyRef Name="idPersona" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="AspNetUserRoles">
+    <End Type="SistemaGimnasioModel.AspNetRoles" Role="AspNetRoles" Multiplicity="*" />
+    <End Type="SistemaGimnasioModel.AspNetUsers" Role="AspNetUsers" Multiplicity="*" />
+  </Association>
+  <EntityType Name="Asistencia">
+    <Key>
+      <PropertyRef Name="idAsistencia" />
+    </Key>
+    <Property Name="Fecha" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="Estado" Type="String" Nullable="false" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="idAsistencia" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="idAlumnos_GrupoGimnasio" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Alumnos_GrupoGimnasio" Relationship="SistemaGimnasioModel.FK__Asistenci__idAlu__6EF57B66" FromRole="Asistencia" ToRole="Alumnos_GrupoGimnasio" />
+  </EntityType>
+  <Association Name="FK__Asistenci__idAlu__6EF57B66">
+    <End Type="SistemaGimnasioModel.Alumnos_GrupoGimnasio" Role="Alumnos_GrupoGimnasio" Multiplicity="1" />
+    <End Type="SistemaGimnasioModel.Asistencia" Role="Asistencia" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Alumnos_GrupoGimnasio">
+        <PropertyRef Name="idAlumnos_GrupoGimnasio" />
+      </Principal>
+      <Dependent Role="Asistencia">
+        <PropertyRef Name="idAlumnos_GrupoGimnasio" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

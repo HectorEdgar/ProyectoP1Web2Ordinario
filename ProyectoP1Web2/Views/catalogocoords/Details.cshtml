@@ -1,0 +1,66 @@
+﻿@model ProyectoP1Web2.Models.catalogocoord
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Detalles</h2>
+
+<div>
+    <h4>Contacto</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.nombre)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.nombre)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.latitud)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.latitud)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.longitud)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.longitud)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.lada)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.lada)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.telefono)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.telefono)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.email)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.email)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Editar", "Edit", new { id = Model.clavecct }) |
+    @Html.ActionLink("Regresar", "Index")
+</p>

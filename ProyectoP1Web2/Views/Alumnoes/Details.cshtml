@@ -1,0 +1,64 @@
+﻿@model ProyectoP1Web2.Models.Alumno
+
+@{
+    ViewBag.Title = "Detalles";
+}
+
+<h2>Detalles</h2>
+
+<div>
+    <h4>Alumno</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            Grupo
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Grupo.Nombre)
+        </dd>
+        <dt>
+            Licenciatura
+        </dt>
+            
+        <dd>
+            @Html.DisplayFor(model => model.Grupo.Licenciatura.Nombre)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Persona.Nombre)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Persona.Nombre)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Persona.ApellidoPaterno)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Persona.ApellidoPaterno)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Persona.ApellidoMaterno)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Persona.ApellidoMaterno)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Persona.Edad)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Persona.Edad)
+        </dd>
+        <dt>
+            
+
+    </dl>
+</div>
+<p>
+   
+    
+</p>

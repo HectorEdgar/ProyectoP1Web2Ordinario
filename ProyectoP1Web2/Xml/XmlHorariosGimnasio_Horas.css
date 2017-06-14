@@ -1,0 +1,27 @@
+﻿HorarioGimnasio_Horas
+{
+  display:block;
+  border-width: 1px;
+  border-style: solid;
+  
+}
+idHorarioGimnasio_Horas{
+  display:block;
+  color:red;
+}
+idHorario{
+  display:block;
+  color:green;
+}
+idHora{
+  display:block;
+  color:green;
+}
+dia{
+  display:block;
+  color:black;
+  font-size:20px;
+}
+idHorario[key]:before {content:""attr(key)" key = "}
+idHorarioGimnasio_Horas[key]:before {content:""attr(key)" key = "}
+idHora[key]:before {content:""attr(key)" key = "}

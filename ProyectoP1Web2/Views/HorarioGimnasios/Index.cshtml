@@ -1,0 +1,38 @@
+﻿@model IEnumerable<ProyectoP1Web2.Models.HorarioGimnasio>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Agregar nuevo", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            Nombre del grupo de gimnasio
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.nombre)
+        </td>
+        <td>
+            @Html.ActionLink("Editar", "Edit", new { id=item.IdHorario }) |
+            @Ajax.ActionLink("Detalles", "Details", "HorarioGimnasios", new { id = item.IdHorario },
+           new AjaxOptions { HttpMethod = "GET", InsertionMode = InsertionMode.Replace, UpdateTargetId = "detalle" })|
+           @* @Html.ActionLink("Detalles", "Details", new { id=item.IdHorario }) |*@
+            @Html.ActionLink("Eliminar", "Delete", new { id=item.IdHorario })
+        </td>
+    </tr>
+}
+
+</table>
+<div id="detalle">
+
+</div>

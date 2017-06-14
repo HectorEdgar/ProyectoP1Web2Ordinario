@@ -1,0 +1,105 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- <!DOCTYPE gruposGimnasio SYSTEM "C:\Users\hetor\Documents\Visual Studio 2015\Projects\ProyectoP1Web2\ProyectoP1Web2\Xml\XmlGrupoGimnasio.dtd">-->
+<?xml-stylesheet type="text/css" href="XmlGrupoGimnasio.css"?>
+<gruposGimnasio xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="C:\Users\hetor\Documents\VISUAL~1\Projects\ProyectoP1Web2\ProyectoP1Web2\Xml\XmlGrupoGimnasio.xsd">
+	<grupoGimnasio>
+		<idGimnasio key="Primary">1</idGimnasio>
+		<nombre>Grupo del gimnasio 1</nombre>
+		<idHorario key="Foreign">1</idHorario>
+	</grupoGimnasio>
+	<grupoGimnasio>
+		<idGimnasio key="Primary">2</idGimnasio>
+		<nombre>Grupo del gimnasio 2</nombre>
+		<idHorario key="Foreign">1</idHorario>
+	</grupoGimnasio>
+	<grupoGimnasio>
+		<idGimnasio key="Primary">3</idGimnasio>
+		<nombre>Grupo del gimnasio 3</nombre>
+		<idHorario key="Foreign">1</idHorario>
+	</grupoGimnasio>
+	<grupoGimnasio>
+		<idGimnasio key="Primary">4</idGimnasio>
+		<nombre>Grupo del gimnasio 4</nombre>
+		<idHorario key="Foreign">2</idHorario>
+	</grupoGimnasio>
+	<grupoGimnasio>
+		<idGimnasio key="Primary">5</idGimnasio>
+		<nombre>Grupo del gimnasio 5</nombre>
+		<idHorario key="Foreign">2</idHorario>
+	</grupoGimnasio>
+	<grupoGimnasio>
+		<idGimnasio key="Primary">6</idGimnasio>
+		<nombre>Grupo del gimnasio 6</nombre>
+		<idHorario key="Foreign">2</idHorario>
+	</grupoGimnasio>
+	<grupoGimnasio>
+		<idGimnasio key="Primary">7</idGimnasio>
+		<nombre>Grupo del gimnasio 7</nombre>
+		<idHorario key="Foreign">3</idHorario>
+	</grupoGimnasio>
+	<grupoGimnasio>
+		<idGimnasio key="Primary">8</idGimnasio>
+		<nombre>Grupo del gimnasio 8</nombre>
+		<idHorario key="Foreign">3</idHorario>
+	</grupoGimnasio>
+	<grupoGimnasio>
+		<idGimnasio key="Primary">9</idGimnasio>
+		<nombre>Grupo del gimnasio 9</nombre>
+		<idHorario key="Foreign">3</idHorario>
+	</grupoGimnasio>
+	<grupoGimnasio>
+		<idGimnasio key="Primary">10</idGimnasio>
+		<nombre>Grupo del gimnasio 10</nombre>
+		<idHorario key="Foreign">4</idHorario>
+	</grupoGimnasio>
+	<grupoGimnasio>
+		<idGimnasio key="Primary">11</idGimnasio>
+		<nombre>Grupo del gimnasio 11</nombre>
+		<idHorario key="Foreign">4</idHorario>
+	</grupoGimnasio>
+	<grupoGimnasio>
+		<idGimnasio key="Primary">12</idGimnasio>
+		<nombre>Grupo del gimnasio 12</nombre>
+		<idHorario key="Foreign">4</idHorario>
+	</grupoGimnasio>
+	<grupoGimnasio>
+		<idGimnasio key="Primary">13</idGimnasio>
+		<nombre>Grupo del gimnasio 13</nombre>
+		<idHorario key="Foreign">5</idHorario>
+	</grupoGimnasio>
+	<grupoGimnasio>
+		<idGimnasio key="Primary">14</idGimnasio>
+		<nombre>Grupo del gimnasio 14</nombre>
+		<idHorario key="Foreign">5</idHorario>
+	</grupoGimnasio>
+	<grupoGimnasio>
+		<idGimnasio key="Primary">15</idGimnasio>
+		<nombre>Grupo del gimnasio 15</nombre>
+		<idHorario key="Foreign">5</idHorario>
+	</grupoGimnasio>
+	<grupoGimnasio>
+		<idGimnasio key="Primary">16</idGimnasio>
+		<nombre>Grupo del gimnasio 16</nombre>
+		<idHorario key="Foreign">6</idHorario>
+	</grupoGimnasio>
+	<grupoGimnasio>
+		<idGimnasio key="Primary">17</idGimnasio>
+		<nombre>Grupo del gimnasio 17</nombre>
+		<idHorario key="Foreign">6</idHorario>
+	</grupoGimnasio>
+	<grupoGimnasio>
+		<idGimnasio key="Primary">18</idGimnasio>
+		<nombre>Grupo del gimnasio 18</nombre>
+		<idHorario key="Foreign">6</idHorario>
+	</grupoGimnasio>
+	<grupoGimnasio>
+		<idGimnasio key="Primary">19</idGimnasio>
+		<nombre>Grupo del gimnasio 19</nombre>
+		<idHorario key="Foreign">7</idHorario>
+	</grupoGimnasio>
+	<grupoGimnasio>
+		<idGimnasio key="Primary">20</idGimnasio>
+		<nombre>Grupo del gimnasio 20</nombre>
+		<idHorario key="Foreign">8</idHorario>
+	</grupoGimnasio>
+</gruposGimnasio>

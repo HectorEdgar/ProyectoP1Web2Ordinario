@@ -1,0 +1,48 @@
+﻿@model ProyectoP1Web2.Models.HorarioGimnasio_Hora
+
+@{
+    ViewBag.Title = "Eliminar";
+}
+
+<h2>Eliminar</h2>
+
+<h3>¿Realmente quieres eliminar esto?</h3>
+<div>
+    <h4>HorarioGimnasio_Hora</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Dia)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Dia)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Hora.IdHora)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Hora.IdHora)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.HorarioGimnasio.nombre)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.HorarioGimnasio.nombre)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Eliminar" class="btn btn-default" /> |
+            @Html.ActionLink("Regresar", "Index")
+        </div>
+    }
+</div>

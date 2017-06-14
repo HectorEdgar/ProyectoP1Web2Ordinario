@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://IS6A-MRHE.org/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://IS6A-MRHE.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://IS6A-MRHE.org/">
+      <s:element name="RetornarCadena">
+        <s:complexType />
+      </s:element>
+      <s:element name="RetornarCadenaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="RetornarCadenaResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="buscarGrupoGimnasio">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="idGimnasio" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="nombre" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="buscarGrupoGimnasioResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="buscarGrupoGimnasioResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="MostrarGruposGimnasio">
+        <s:complexType />
+      </s:element>
+      <s:element name="MostrarGruposGimnasioResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="MostrarGruposGimnasioResult" type="tns:ArrayOfString" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfString">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="string" nillable="true" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="MostrarGruposGimnasio2">
+        <s:complexType />
+      </s:element>
+      <s:element name="MostrarGruposGimnasio2Response">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="MostrarGruposGimnasio2Result">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="RetornarCadenaSoapIn">
+    <wsdl:part name="parameters" element="tns:RetornarCadena" />
+  </wsdl:message>
+  <wsdl:message name="RetornarCadenaSoapOut">
+    <wsdl:part name="parameters" element="tns:RetornarCadenaResponse" />
+  </wsdl:message>
+  <wsdl:message name="buscarGrupoGimnasioSoapIn">
+    <wsdl:part name="parameters" element="tns:buscarGrupoGimnasio" />
+  </wsdl:message>
+  <wsdl:message name="buscarGrupoGimnasioSoapOut">
+    <wsdl:part name="parameters" element="tns:buscarGrupoGimnasioResponse" />
+  </wsdl:message>
+  <wsdl:message name="MostrarGruposGimnasioSoapIn">
+    <wsdl:part name="parameters" element="tns:MostrarGruposGimnasio" />
+  </wsdl:message>
+  <wsdl:message name="MostrarGruposGimnasioSoapOut">
+    <wsdl:part name="parameters" element="tns:MostrarGruposGimnasioResponse" />
+  </wsdl:message>
+  <wsdl:message name="MostrarGruposGimnasio2SoapIn">
+    <wsdl:part name="parameters" element="tns:MostrarGruposGimnasio2" />
+  </wsdl:message>
+  <wsdl:message name="MostrarGruposGimnasio2SoapOut">
+    <wsdl:part name="parameters" element="tns:MostrarGruposGimnasio2Response" />
+  </wsdl:message>
+  <wsdl:portType name="WebService1Soap">
+    <wsdl:operation name="RetornarCadena">
+      <wsdl:input message="tns:RetornarCadenaSoapIn" />
+      <wsdl:output message="tns:RetornarCadenaSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="buscarGrupoGimnasio">
+      <wsdl:input message="tns:buscarGrupoGimnasioSoapIn" />
+      <wsdl:output message="tns:buscarGrupoGimnasioSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="MostrarGruposGimnasio">
+      <wsdl:input message="tns:MostrarGruposGimnasioSoapIn" />
+      <wsdl:output message="tns:MostrarGruposGimnasioSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="MostrarGruposGimnasio2">
+      <wsdl:input message="tns:MostrarGruposGimnasio2SoapIn" />
+      <wsdl:output message="tns:MostrarGruposGimnasio2SoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="WebService1Soap" type="tns:WebService1Soap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="RetornarCadena">
+      <soap:operation soapAction="http://IS6A-MRHE.org/RetornarCadena" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="buscarGrupoGimnasio">
+      <soap:operation soapAction="http://IS6A-MRHE.org/buscarGrupoGimnasio" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="MostrarGruposGimnasio">
+      <soap:operation soapAction="http://IS6A-MRHE.org/MostrarGruposGimnasio" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="MostrarGruposGimnasio2">
+      <soap:operation soapAction="http://IS6A-MRHE.org/MostrarGruposGimnasio2" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="WebService1Soap12" type="tns:WebService1Soap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="RetornarCadena">
+      <soap12:operation soapAction="http://IS6A-MRHE.org/RetornarCadena" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="buscarGrupoGimnasio">
+      <soap12:operation soapAction="http://IS6A-MRHE.org/buscarGrupoGimnasio" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="MostrarGruposGimnasio">
+      <soap12:operation soapAction="http://IS6A-MRHE.org/MostrarGruposGimnasio" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="MostrarGruposGimnasio2">
+      <soap12:operation soapAction="http://IS6A-MRHE.org/MostrarGruposGimnasio2" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="WebService1">
+    <wsdl:port name="WebService1Soap" binding="tns:WebService1Soap">
+      <soap:address location="http://localhost/ProyectoP1Web2/WebService1.asmx" />
+    </wsdl:port>
+    <wsdl:port name="WebService1Soap12" binding="tns:WebService1Soap12">
+      <soap12:address location="http://localhost/ProyectoP1Web2/WebService1.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

@@ -1,0 +1,42 @@
+﻿@model ProyectoP1Web2.Models.Grupo
+
+@{
+    ViewBag.Title = "Detalles";
+}
+
+<h2>Detalles</h2>
+
+<div>
+    <h4>Grupo</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Nombre)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Nombre)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.semestre)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.semestre)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Licenciatura.Nombre)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Licenciatura.Nombre)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Editar", "Edit", new { id = Model.idGrupo }) |
+    @Html.ActionLink("Regresar", "Index")
+</p>

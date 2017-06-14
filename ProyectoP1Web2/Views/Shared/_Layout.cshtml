@@ -1,0 +1,121 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title Sistema de control de asistencia del gimnasio La Salle</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+    @Scripts.Render("~/bundles/jquery")
+ 
+
+</head>
+<body>
+    <div class="navbar navbar-inverse navbar-fixed-top col-md-12">
+        <div class="container col-md-10">
+            <div class="navbar-header navbar-left">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                @Html.ActionLink("Gimnasio IS6A", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+            </div>
+            <div class="navbar-collapse collapse  navbar-left">
+                <ul class="nav navbar-nav ">
+                    <li role="presentation" class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                            Usuarios Identity <span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            @*<li>@Html.ActionLink("AspNetRoles", "Index", "AspNetRoles")</li>
+                            <li>@Html.ActionLink("AspNetUserLogins", "Index", "AspNetUserLogins")</li>
+                            <li>@Html.ActionLink("AspNetUserClaims", "Index", "AspNetUserClaims")</li>*@
+                            <li>@Html.ActionLink("AspNetUsers", "Index", "AspNetUsers")</li>
+                            @*<li>@Html.ActionLink("Usuario", "Index", "Usuarios")</li>*@
+                        </ul>
+                    </li>
+                    <li role="presentation" class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                            Escuela <span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li>@Html.ActionLink("Persona", "Index", "Personas")</li>
+                            <li>@Html.ActionLink("Alumnos", "Index", "Alumnoes")</li>
+                            <li>@Html.ActionLink("Licenciatura", "Index", "Licenciaturas")</li>
+                            <li>@Html.ActionLink("Grupo", "Index", "Grupoes")</li>
+                            <li>@Html.ActionLink("Asistencias", "Index", "Asistencias")</li>
+                        </ul>
+                    </li>
+                    
+                    <li role="presentation" class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                            Gimnasio <span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li>@Html.ActionLink("Horario del gimnasio", "Index", "HorarioGimnasios")</li>
+                            <li>@Html.ActionLink("Hora", "Index", "Horas")</li>
+                            <li>@Html.ActionLink("HorarioGimnasio_Hora", "Index", "HorarioGimnasio_Hora")</li>
+                            <li>@Html.ActionLink("GrupoGimnasios", "Index", "GrupoGimnasios")</li>
+                            <li>@Html.ActionLink("Alumnos_GrupoGimnasio", "Index", "Alumnos_GrupoGimnasio")</li>
+                        </ul>
+                    </li>
+                    <li role="presentation" class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                            Web services <span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li>@Html.ActionLink("Web service", "../WebService1.asmx")</li>
+                            <li>@Html.ActionLink("Consumir Web service", "../ConsumirServicio.aspx")</li>
+                        </ul>
+                    </li>  
+                    <li role="presentation" class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                            Contactos <span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li>@Html.ActionLink("Administrar contactos", "Index", "catalogocoords")</li>
+                            <li>@Html.ActionLink("Lista de contacto", "Contact", "Home")</li>
+                        </ul>
+                    </li>        
+                    <li>
+                    
+                    <li>@Html.ActionLink("Acerca de.", "About", "Home")</li>
+                    @Html.Partial("_LoginPartial")
+                </ul>
+                
+            </div>
+        </div>
+        
+    </div>
+    <div class="clearfix">&nbsp;</div>
+    <div class="clearfix">&nbsp;</div> 
+    <div class="clearfix">&nbsp;</div>
+    <div class="clearfix">&nbsp;</div> 
+    <div class="container body-content">
+        @RenderBody()
+        <hr />
+        <footer class="navbar-fixed-bottom text-center navbar-inverse">
+            <p>&copy; @DateTime.Now.Year - La Salle-Gimnasio</p>
+        </footer>
+    </div>
+   
+    @{
+
+
+//Response.Write(Request.Path + " " + Request.ApplicationPath + " " + Request.Path != (Request.ApplicationPath + "/Account/Login"));
+//if (Request.Path!=Request.ApplicationPath + "Account/Login")
+//{
+//    if (!Request.ApplicationPath.Equals(Request.Path))
+//    {
+//        if (!Request.IsAuthenticated)
+//        {
+//            Response.Redirect(Request.ApplicationPath);
+//        }
+//    }
+//}
+    }
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</body>
+</html>
